@@ -46,7 +46,7 @@ public class GetPresignedObjectUrl {
       String url =
           minioClient.getPresignedObjectUrl(
               GetPresignedObjectUrlArgs.builder()
-                  .method(Method.DELETE)
+                  .method(Method.GET)
                   .bucket("my-bucketname")
                   .object("my-objectname")
                   .expiry(60 * 60 * 24)
